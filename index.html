@@ -2,11 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Learn about flu prevention and find vaccination centers near you. Protect yourself and your community this flu season.">
     <meta name="theme-color" content="#FF7F50">
     <title>Flu Awareness Campaign | Protect Yourself & Your Community</title>
-    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -28,7 +27,20 @@
                     <span class="title-line">Fight the Flu</span>
                 </h1>
                 <p class="header-subtitle">Protect yourself and your loved ones this season</p>
-                
+                <div class="header-stats" data-hidden-on-mobile>
+                    <div class="stat-item">
+                        <span class="stat-value">60%</span>
+                        <span class="stat-label">Risk Reduction</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">150M+</span>
+                        <span class="stat-label">Vaccinated</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-value">24/7</span>
+                        <span class="stat-label">Clinic Access</span>
+                    </div>
+                </div>
             </div>
             <div class="header-wave">
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
@@ -49,9 +61,12 @@
                     playsinline 
                     preload="metadata"
                     poster="path/to/poster-image.jpg"
-                    aria-label="Flu prevention educational video">
+                    aria-label="Flu prevention educational video"
+                    webkit-playsinline="true"
+                    x5-playsinline="true"
+                    x-webkit-airplay="allow">
                     <source src="samplevid.mp4" type="video/mp4">
-                    <source src="" type="video/webm">
+                    <source src="YOUR_VIDEO_URL_HERE.webm" type="video/webm">
                     <track kind="captions" src="path/to/captions.vtt" srclang="en" label="English">
                     <p>Your browser does not support the video tag. 
                        <a href="samplevid.mp4">Download the video</a> instead.</p>
@@ -108,7 +123,7 @@
             <div class="cta-content">
                 <h2 id="cta-heading" class="cta-title">Take Action Today</h2>
                 <p class="cta-description">One shot can stop the spread. Find a vaccination center near you.</p>
-                <a href="https://www.google.com/maps/search/flu+vaccination+center" 
+                <a href="https://www.google.com/maps/search/vaccination+center" 
                    class="btn-primary" 
                    target="_blank" 
                    rel="noopener noreferrer"
