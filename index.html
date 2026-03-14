@@ -4,119 +4,188 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <meta name="description" content="Learn about flu prevention and find vaccination centers near you. Protect yourself and your community this flu season.">
-    <meta name="theme-color" content="#FF7F50">
+    <meta name="theme-color" content="#f25a28">
     <title>Flu Awareness Campaign | Protect Yourself & Your Community</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
     <main id="main-content" class="container" role="main">
+
         <header class="header" role="banner">
-            <div class="header-bg-shapes">
-                <div class="shape shape-1"></div>
-                <div class="shape shape-2"></div>
-                <div class="shape shape-3"></div>
-            </div>
             <div class="header-content">
-                <div class="header-icon-wrapper">
-                    <span class="header-icon" aria-hidden="true">🛡️</span>
+                <div class="header-badge">
+                    <span class="header-badge-dot"></span>
+                    Flu Awareness Campaign
                 </div>
-                <h1 class="header-title">
-                    <span class="title-line">Fight the Flu</span>
-                </h1>
+                <h1 class="header-title">Fight the Flu</h1>
                 <p class="header-subtitle">Protect yourself and your loved ones this season</p>
-            </div>
-            <div class="header-wave">
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-                    <path fill="var(--color-white)" fill-opacity="1" d="M0,96L48,112C96,128,192,160,288,160C384,160,480,128,576,122.7C672,117,768,139,864,154.7C960,171,1056,181,1152,170.7C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-                </svg>
             </div>
         </header>
 
-        <section class="video-section" aria-labelledby="video-heading">
-            <header class="section-header">
-                <h2 id="video-heading" class="section-title">Learn More About Flu Prevention</h2>
-                <p class="section-description">Watch this short video to understand why vaccination matters</p>
-            </header>
-            <div class="video-wrapper" role="region" aria-label="Educational video about flu prevention">
-                <video 
-                    class="video-element"
-                    controls 
-                    playsinline 
-                    preload="metadata"
-                    poster="path/to/poster-image.jpg"
-                    aria-label="Flu prevention educational video"
-                    webkit-playsinline="true"
-                    x5-playsinline="true"
-                    x-webkit-airplay="allow">
-                    <source src="samplevid.mp4" type="video/mp4">
-                    <source src="YOUR_VIDEO_URL_HERE.webm" type="video/webm">
-                    <track kind="captions" src="path/to/captions.vtt" srclang="en" label="English">
-                    <p>Your browser does not support the video tag. 
-                       <a href="samplevid.mp4">Download the video</a> instead.</p>
-                </video>
+        <section class="section--white" aria-labelledby="video-heading">
+            <div class="section-inner">
+                <header class="section-header">
+                    <span class="section-label">Watch &amp; Learn</span>
+                    <h2 id="video-heading" class="section-title">Learn About Flu Prevention</h2>
+                    <p class="section-desc">Watch this short video to understand why vaccination matters</p>
+                </header>
+                <div class="video-wrapper" role="region" aria-label="Educational video about flu prevention">
+                    <video
+                        class="video-element"
+                        controls
+                        playsinline
+                        preload="metadata"
+                        poster="path/to/poster-image.jpg"
+                        aria-label="Flu prevention educational video"
+                        webkit-playsinline="true">
+                        <source src="samplevid.mp4" type="video/mp4">
+                        <source src="YOUR_VIDEO_URL_HERE.webm" type="video/webm">
+                        <track kind="captions" src="path/to/captions.vtt" srclang="en" label="English">
+                        <p>Your browser does not support video.
+                           <a href="samplevid.mp4">Download the video</a> instead.</p>
+                    </video>
+                </div>
             </div>
         </section>
 
-        <section class="facts-section" aria-labelledby="facts-heading">
-            <header class="section-header">
-                <h2 id="facts-heading" class="section-title">Why Get Vaccinated?</h2>
-                <p class="section-description">Scientific reasons to protect yourself and your community</p>
-            </header>
-            
-            <div class="facts-grid" role="list">
-                <div class="fact-card" role="listitem">
-                    <div class="card-icon-wrapper">
-                        <span class="card-icon">🛡️</span>
+        <section class="section--muted" aria-labelledby="vaccinated-heading">
+            <div class="section-inner">
+                <header class="section-header">
+                    <span class="section-label">Vaccination Benefits</span>
+                    <h2 id="vaccinated-heading" class="section-title">Why Get Vaccinated?</h2>
+                    <p class="section-desc">Scientific reasons to protect yourself and your community</p>
+                </header>
+
+                <div class="grid-4" role="list">
+                    <div class="card card--center" role="listitem">
+                        <div class="card-icon">🛡️</div>
+                        <h3 class="card-title">Proven Protection</h3>
+                        <p class="card-text">Reduces your risk of flu illness by 40–60% during seasons when flu viruses are spreading</p>
                     </div>
-                    <h3 class="card-title">Proven Protection</h3>
-                    <p class="card-text">Reduces your risk of flu illness by 40-60% during seasons when flu viruses are spreading</p>
-                    <div class="card-accent"></div>
-                </div>
-                
-                <div class="fact-card" role="listitem">
-                    <div class="card-icon-wrapper">
-                        <span class="card-icon">👨‍👩‍👧‍👦</span>
+
+                    <div class="card card--center" role="listitem">
+                        <div class="card-icon">👨‍👩‍👧‍👦</div>
+                        <h3 class="card-title">Community Shield</h3>
+                        <p class="card-text">Protects vulnerable populations including children, elderly, and those with chronic conditions</p>
                     </div>
-                    <h3 class="card-title">Community Shield</h3>
-                    <p class="card-text">Protects vulnerable populations including children, elderly, and those with chronic conditions</p>
-                    <div class="card-accent"></div>
-                </div>
-                
-                <div class="fact-card" role="listitem">
-                    <div class="card-icon-wrapper">
-                        <span class="card-icon">🏥</span>
+
+                    <div class="card card--center" role="listitem">
+                        <div class="card-icon">🏥</div>
+                        <h3 class="card-title">Prevents Severity</h3>
+                        <p class="card-text">Prevents serious complications and hospitalizations from flu-related illnesses</p>
                     </div>
-                    <h3 class="card-title">Prevents Severity</h3>
-                    <p class="card-text">Prevents serious complications and hospitalizations from flu-related illnesses</p>
-                    <div class="card-accent"></div>
-                </div>
-                
-                <div class="fact-card" role="listitem">
-                    <div class="card-icon-wrapper">
-                        <span class="card-icon">✅</span>
+
+                    <div class="card card--center" role="listitem">
+                        <div class="card-icon">✅</div>
+                        <h3 class="card-title">Clinically Tested</h3>
+                        <p class="card-text">Safe, thoroughly tested, and recommended by healthcare professionals worldwide</p>
                     </div>
-                    <h3 class="card-title">Clinically Tested</h3>
-                    <p class="card-text">Safe, thoroughly tested, and recommended by healthcare professionals worldwide</p>
-                    <div class="card-accent"></div>
                 </div>
+            </div>
+        </section>
+
+        <section class="section--white" aria-labelledby="flufacts-heading">
+            <div class="section-inner">
+                <header class="section-header">
+                    <span class="section-label">Did You Know?</span>
+                    <h2 id="flufacts-heading" class="section-title">Flu Facts You Should Know</h2>
+                    <p class="section-desc">Key facts about influenza from global health authorities</p>
+                </header>
+
+                <div class="stat-banner" role="region" aria-label="Global flu statistics">
+                    <span class="stat-number">1 Billion</span>
+                    <span class="stat-label">estimated cases of flu are thought to occur annually¹</span>
+                </div>
+
+                <div class="grid-3" role="list" aria-label="Flu facts">
+
+                    <div class="card card--row" role="listitem">
+                        <div class="card-icon">👥</div>
+                        <div class="card-body">
+                            <span class="card-title">Flu Can Affect Anyone</span>
+                            <span class="card-text">Regardless of their age — no one is immune to influenza.²·³</span>
+                        </div>
+                    </div>
+
+                    <div class="card card--row" role="listitem">
+                        <div class="card-icon">💊</div>
+                        <div class="card-body">
+                            <span class="card-title">Antibiotics Are Ineffective</span>
+                            <span class="card-text">Flu is caused by viruses, so antibiotics won't work against it.²</span>
+                        </div>
+                    </div>
+
+                    <div class="card card--row" role="listitem">
+                        <div class="card-icon">🗓️</div>
+                        <div class="card-body">
+                            <span class="card-title">Recovery Takes ~1 Week</span>
+                            <span class="card-text">Healthy people usually recover, but some may need hospitalization or can even die.²</span>
+                        </div>
+                    </div>
+
+                    <div class="card card--row" role="listitem">
+                        <div class="card-icon">🔬</div>
+                        <div class="card-body">
+                            <span class="card-title">Viruses Mutate Over Time</span>
+                            <span class="card-text">Flu is seasonal because the virus mutates, returning every year in a new form.³</span>
+                        </div>
+                    </div>
+
+                    <div class="card card--row" role="listitem">
+                        <div class="card-icon">🤧</div>
+                        <div class="card-body">
+                            <span class="card-title">Spreads via Coughing &amp; Sneezing</span>
+                            <span class="card-text">The virus travels from infected people to those around them through droplets.²</span>
+                        </div>
+                    </div>
+
+                    <div class="card card--row" role="listitem">
+                        <div class="card-icon">🧓</div>
+                        <div class="card-body">
+                            <span class="card-title">Protecting the Vulnerable</span>
+                            <span class="card-text">Preventing flu helps protect older people, pregnant women, and those with chronic conditions.¹</span>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="who-strip" role="note" aria-label="WHO recommendation">
+                    <span class="who-strip-icon" aria-hidden="true">🌐</span>
+                    <p class="who-strip-text">
+                        <strong>The World Health Organization</strong> recommends annual flu vaccination for everyone —
+                        vaccination remains the best way to prevent flu.¹
+                    </p>
+                </div>
+
+                <div class="boost-banner" role="region" aria-label="Boost immunity">
+                    <span class="boost-icon" aria-hidden="true">💉</span>
+                    <div>
+                        <p class="boost-headline"><span class="hi">Boost</span> Immunity</p>
+                        <p class="boost-sub">Vaccination is the best way to prevent flu¹</p>
+                    </div>
+                </div>
+
+                <p class="sources">
+                    ¹ WHO. Influenza (Seasonal), October 2023. &nbsp;·&nbsp;
+                    ² UK NHS. The Flu Vaccination, Winter 2022–2023. &nbsp;·&nbsp;
+                    ³ Alvarez F, et al. Future Microbiol. 2019; 14(16), 1429–1436.
+                </p>
             </div>
         </section>
 
         <section class="cta-section" aria-labelledby="cta-heading">
-            <div class="cta-content">
-                <h2 id="cta-heading" class="cta-title">Take Action Today</h2>
-                <p class="cta-description">One shot can stop the spread. Find a vaccination center near you.</p>
-                <a href="https://www.google.com/maps/search/?api=1&query=hospital+flu+vaccination" 
-                    class="btn-primary" 
-                    target="_blank" 
-                    rel="noopener noreferrer"
-                    aria-label="Find a flu vaccination center near you (opens in new tab)">
-                        Find a Clinic Near You
-                </a>
-            </div>
+            <span class="section-label">Take Action</span>
+            <h2 id="cta-heading" class="cta-title">Get Vaccinated Today</h2>
+            <p class="cta-desc">One shot can stop the spread. Find a vaccination center near you.</p>
+            <a href="https://www.google.com/maps/search/?api=1&query=hospital+flu+vaccination"
+                class="btn-primary"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Find a flu vaccination center near you (opens in new tab)">
+                Find a Clinic Near You
+            </a>
         </section>
 
         <footer class="footer" role="contentinfo">
@@ -125,6 +194,7 @@
             </p>
             <p class="copyright">© 2026 Public Health Initiative. All Rights Reserved.</p>
         </footer>
+
     </main>
 
     <script src="script.js"></script>
