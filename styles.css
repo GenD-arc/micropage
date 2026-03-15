@@ -324,6 +324,44 @@ button { border: none; background: none; cursor: pointer; }
     background: #000;
 }
 
+.pdf-section {
+    padding: var(--sp-8) 0 0;
+}
+
+.pdf-section .section-inner-header {
+    padding: 0 var(--sp-6) var(--sp-6);
+}
+
+.pdf-wrapper {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    background: var(--c-surface);
+    border: 1px solid var(--c-border);
+    border-radius: 0;
+    margin-bottom: var(--sp-6);
+}
+
+.pdf-element {
+    width: 100%;
+    height: auto;
+    display: block;
+    border: none;
+}
+
+.pdf-fallback {
+    font-size: var(--fs-sm);
+    color: var(--c-text-2);
+    text-align: center;
+    padding: var(--sp-4);
+    background: var(--c-bg);
+}
+
+.pdf-fallback a {
+    color: var(--c-primary);
+    font-weight: var(--fw-semibold);
+}
+
 .stat-banner {
     background: linear-gradient(135deg, var(--c-primary) 0%, var(--c-accent) 100%);
     border-radius: var(--r-lg);

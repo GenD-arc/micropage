@@ -1,4 +1,9 @@
 document.addEventListener('DOMContentLoaded', function() {
+
+    if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+    }
+
     const videoWrapper = document.querySelector('.video-wrapper');
     const video = document.querySelector('.video-element');
     
