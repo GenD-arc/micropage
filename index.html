@@ -7,6 +7,10 @@
     <meta name="theme-color" content="#f25a28">
     <title>Flu Awareness Campaign | Protect Yourself & Your Community</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
@@ -23,7 +27,7 @@
             </div>
         </header>
 
-        <section class="section--white video-section" aria-labelledby="video-heading">
+        <section class="section--white video-section reveal" aria-labelledby="video-heading">
             <div class="section-inner-header">
                 <header class="section-header">
                     <span class="section-label">Watch &amp; Learn</span>
@@ -47,6 +51,27 @@
                     </video>
             </div>
         </section>
+        <section class="section--white pdf-section reveal" aria-labelledby="pdf-heading">
+            <div class="section-inner-header">
+                <header class="section-header">
+                    <span class="section-label">Flu Facts</span>
+                    <h2 id="pdf-heading" class="section-title">Influvac Flu Facts Poster</h2>
+                    <p class="section-desc">View detailed information about flu prevention and vaccination</p>
+                </header>
+            </div>
+            <div class="pdf-wrapper" role="region" aria-label="Flu facts poster">
+                <img
+                    src="Influvac Poster Flu Facts A3 size_437242bc-d03a-441a-b093-9b9642143ff4_page-0001.jpg"
+                    alt="Influvac Flu Facts Poster"
+                    class="pdf-element clickable-image"
+                    loading="lazy">
+                <img
+                    src="2.jfif"
+                    alt="Additional flu information image"
+                    class="pdf-element clickable-image"
+                    loading="lazy">
+            </div>
+        </section>
         <section class="section--muted" aria-labelledby="vaccinated-heading">
             <div class="section-inner">
                 <header class="section-header">
@@ -55,27 +80,27 @@
                     <p class="section-desc">Scientific reasons to protect yourself and your community</p>
                 </header>
 
-                <div class="grid-4" role="list">
+                <div class="grid-4 reveal" role="list">
                     <div class="card card--center" role="listitem">
-                        <div class="card-icon">🛡️</div>
+                        <div class="card-icon"><i data-lucide="shield"></i></div>
                         <h3 class="card-title">Proven Protection</h3>
                         <p class="card-text">Reduces your risk of flu illness by 40–60% during seasons when flu viruses are spreading</p>
                     </div>
 
                     <div class="card card--center" role="listitem">
-                        <div class="card-icon">👨‍👩‍👧‍👦</div>
+                        <div class="card-icon"><i data-lucide="users"></i></div>
                         <h3 class="card-title">Community Shield</h3>
                         <p class="card-text">Protects vulnerable populations including children, elderly, and those with chronic conditions</p>
                     </div>
 
                     <div class="card card--center" role="listitem">
-                        <div class="card-icon">🏥</div>
+                        <div class="card-icon"><i data-lucide="heart-pulse"></i></div>
                         <h3 class="card-title">Prevents Severity</h3>
                         <p class="card-text">Prevents serious complications and hospitalizations from flu-related illnesses</p>
                     </div>
 
                     <div class="card card--center" role="listitem">
-                        <div class="card-icon">✅</div>
+                        <div class="card-icon"><i data-lucide="circle-check"></i></div>
                         <h3 class="card-title">Clinically Tested</h3>
                         <p class="card-text">Safe, thoroughly tested, and recommended by healthcare professionals worldwide</p>
                     </div>
@@ -84,20 +109,20 @@
         </section>
         <section class="section--white" aria-labelledby="flufacts-heading">
             <div class="section-inner">
-                <header class="section-header">
+                <header class="section-header reveal">
                     <span class="section-label">Did You Know?</span>
                     <h2 id="flufacts-heading" class="section-title">Flu Facts You Should Know</h2>
                     <p class="section-desc">Key facts about influenza from global health authorities</p>
                 </header>
 
-                <div class="stat-banner" role="region" aria-label="Global flu statistics">
+                <div class="stat-banner reveal" role="region" aria-label="Global flu statistics">
                     <span class="stat-number">1 Billion</span>
                     <span class="stat-label">estimated cases of flu are thought to occur annually¹</span>
                 </div>
-                <div class="grid-3" role="list" aria-label="Flu facts">
+                <div class="grid-3 reveal" role="list" aria-label="Flu facts">
 
                     <div class="card card--row" role="listitem">
-                        <div class="card-icon">👥</div>
+                        <div class="card-icon"><i data-lucide="users"></i></div>
                         <div class="card-body">
                             <span class="card-title">Flu Can Affect Anyone</span>
                             <span class="card-text">Regardless of their age — no one is immune to influenza.²·³</span>
@@ -105,7 +130,7 @@
                     </div>
 
                     <div class="card card--row" role="listitem">
-                        <div class="card-icon">💊</div>
+                        <div class="card-icon"><i data-lucide="pill"></i></div>
                         <div class="card-body">
                             <span class="card-title">Antibiotics Are Ineffective</span>
                             <span class="card-text">Flu is caused by viruses, so antibiotics won't work against it.²</span>
@@ -113,7 +138,7 @@
                     </div>
 
                     <div class="card card--row" role="listitem">
-                        <div class="card-icon">🗓️</div>
+                        <div class="card-icon"><i data-lucide="calendar"></i></div>
                         <div class="card-body">
                             <span class="card-title">Recovery Takes ~1 Week</span>
                             <span class="card-text">Healthy people usually recover, but some may need hospitalization or can even die.²</span>
@@ -121,7 +146,7 @@
                     </div>
 
                     <div class="card card--row" role="listitem">
-                        <div class="card-icon">🔬</div>
+                        <div class="card-icon"><i data-lucide="microscope"></i></div>
                         <div class="card-body">
                             <span class="card-title">Viruses Mutate Over Time</span>
                             <span class="card-text">Flu is seasonal because the virus mutates, returning every year in a new form.³</span>
@@ -129,7 +154,7 @@
                     </div>
 
                     <div class="card card--row" role="listitem">
-                        <div class="card-icon">🤧</div>
+                        <div class="card-icon"><i data-lucide="wind"></i></div>
                         <div class="card-body">
                             <span class="card-title">Spreads via Coughing &amp; Sneezing</span>
                             <span class="card-text">The virus travels from infected people to those around them through droplets.²</span>
@@ -137,7 +162,7 @@
                     </div>
 
                     <div class="card card--row" role="listitem">
-                        <div class="card-icon">🧓</div>
+                        <div class="card-icon"><i data-lucide="heart-hand"></i></div>
                         <div class="card-body">
                             <span class="card-title">Protecting the Vulnerable</span>
                             <span class="card-text">Preventing flu helps protect older people, pregnant women, and those with chronic conditions.¹</span>
@@ -146,15 +171,19 @@
 
                 </div>
 
-                <div class="who-strip" role="note" aria-label="WHO recommendation">
-                    <span class="who-strip-icon" aria-hidden="true">🌐</span>
+                <div class="who-strip reveal" role="note" aria-label="WHO recommendation">
+                    <span class="who-strip-icon" aria-hidden="true"><i data-lucide="globe"></i></span>
                     <p class="who-strip-text">
                         <strong>The World Health Organization</strong> recommends annual flu vaccination for everyone —
                         vaccination remains the best way to prevent flu.¹
                     </p>
                 </div>
-                <div class="boost-banner" role="region" aria-label="Boost immunity">
-                    <span class="boost-icon" aria-hidden="true">💉</span>
+                <div class="boost-banner reveal" role="region" aria-label="Boost immunity">
+                    <span class="corner-mark top-left"></span>
+                    <span class="corner-mark top-right"></span>
+                    <span class="corner-mark bottom-left"></span>
+                    <span class="corner-mark bottom-right"></span>
+                    <span class="boost-icon" aria-hidden="true"><i data-lucide="syringe"></i></span>
                     <div>
                         <p class="boost-headline"><span class="hi">Boost</span> Immunity</p>
                         <p class="boost-sub">Vaccination is the best way to prevent flu¹</p>
@@ -168,7 +197,8 @@
                 </p>
             </div>
         </section>
-        <section class="cta-section" aria-labelledby="cta-heading">
+        <section class="cta-section reveal" aria-labelledby="cta-heading">
+            <div class="grid-pattern"></div>
             <span class="section-label">Take Action</span>
             <h2 id="cta-heading" class="cta-title">Get Vaccinated Today</h2>
             <p class="cta-desc">One shot can stop the spread. Find a vaccination center near you.</p>
@@ -177,6 +207,7 @@
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Find a flu vaccination center near you (opens in new tab)">
+                <i data-lucide="map-pin"></i>
                 Find a Clinic Near You
             </a>
         </section>
@@ -188,6 +219,23 @@
         </footer>
 
     </main>
+
+    <!-- Image Lightbox Modal -->
+    <div class="image-lightbox" id="imageLightbox" role="dialog" aria-modal="true" aria-label="Image viewer">
+        <button class="lightbox-close" aria-label="Close image viewer">
+            <i data-lucide="x"></i>
+        </button>
+        <button class="lightbox-nav lightbox-prev" aria-label="Previous image">
+            <i data-lucide="chevron-left"></i>
+        </button>
+        <button class="lightbox-nav lightbox-next" aria-label="Next image">
+            <i data-lucide="chevron-right"></i>
+        </button>
+        <div class="lightbox-content">
+            <img src="" alt="" class="lightbox-image" id="lightboxImage">
+        </div>
+        <div class="lightbox-caption" id="lightboxCaption"></div>
+    </div>
 
     <script src="script.js"></script>
 </body>
